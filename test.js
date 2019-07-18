@@ -1,8 +1,14 @@
+<script src="https://browser.sentry-cdn.com/5.5.0/bundle.min.js" crossorigin="anonymous"></script>
+
+Sentry.init({ dsn: 'https://f47daab765814c109ad04be64832ab4d@sentry.io/1507606' });
+
 function QuizQuestion(question, choices, correctAnswer){
   this.question = question;
   this.choices = choices;
   this.correctAnswer = correctAnswer;
 }
+
+myUndefinedFunction();
   
 var allQuestions = [
   new QuizQuestion("Grand Central Terminal, Park Avenue, New York is the world's",["largest railway station", "highest railway station", "longest railway station", "None of the above"],0),
